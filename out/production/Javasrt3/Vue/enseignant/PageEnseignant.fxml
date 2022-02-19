@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.enseignant.PageEnseignantController">
+    <left>
+        <AnchorPane prefHeight="577.0" prefWidth="216.0" style="-fx-background-color: #7324ba;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Image/student_malecompte_100px.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="55.0" layoutY="228.0" prefHeight="28.0" prefWidth="131.0" textFill="WHITE" />
+                <Label layoutX="54.0" layoutY="263.0" prefHeight="28.0" prefWidth="131.0" textFill="WHITE" />
+                <Label layoutX="54.0" layoutY="297.0" prefHeight="28.0" prefWidth="131.0" textFill="WHITE" />
+                <Button layoutX="94.0" layoutY="508.0" mnemonicParsing="false" onAction="#Deconnecter" prefHeight="55.0" prefWidth="80.0" style="-fx-background-color: #7324ba;">
+                    <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../Image/disconnected_100px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children></AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="577.0" prefWidth="670.0" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="tableEmploi" layoutX="6.0" layoutY="164.0" prefHeight="381.0" prefWidth="986.0">
+                    <columns>
+                        <TableColumn fx:id="colLundi" prefWidth="141.0" text="Lundi" />
+                        <TableColumn fx:id="colMardi" prefWidth="146.0" text="Mardi" />
+                        <TableColumn fx:id="colMercredi" prefWidth="178.0" text="Mercredi" />
+                        <TableColumn fx:id="colJeudi" prefWidth="156.0" text="Jeudi" />
+                        <TableColumn fx:id="colvendredi" prefWidth="178.0" text="Vendredi" />
+                        <TableColumn fx:id="colSamedi" prefWidth="186.0" text="Samedi" />
+                    </columns>
+                </TableView>
+                <Button layoutX="29.0" layoutY="89.0" mnemonicParsing="false" onAction="#Emploi" prefHeight="34.0" prefWidth="152.0" style="-fx-background-color: #7324ba;" text="VOIR EMPLOI DU TEMPS" textFill="WHITE" />
+            </children></AnchorPane>
+    </center>
+</BorderPane>

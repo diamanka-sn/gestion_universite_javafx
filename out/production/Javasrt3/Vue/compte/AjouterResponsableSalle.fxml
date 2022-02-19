@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.responsableSalleController">
+   <children>
+      <TextField fx:id="txtMatricule" layoutX="95.0" layoutY="82.0" prefHeight="34.0" prefWidth="166.0" promptText="Matricule" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="txtNom" layoutX="95.0" layoutY="136.0" prefHeight="34.0" prefWidth="166.0" promptText="Nom" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="txtPrenom" layoutX="314.0" layoutY="82.0" prefHeight="34.0" prefWidth="166.0" promptText="Prenom" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="txtemail" layoutX="314.0" layoutY="136.0" prefHeight="34.0" prefWidth="166.0" promptText="Email" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="533.0" layoutY="82.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="34.0" prefWidth="96.0" style="-fx-background-color: #7324ba;" text="AJOUTER" textFill="#fffefe">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtPasse" layoutX="95.0" layoutY="215.0" prefHeight="34.0" prefWidth="175.0" promptText="Donner Mot de Passe" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="371.0" layoutY="211.0" mnemonicParsing="false" onAction="#Autorisation" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #7324ba;" text="AUTORISATION" textFill="#fffefe">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbResultat" layoutX="113.0" layoutY="35.0" prefHeight="25.0" prefWidth="338.0" />
+      <Label fx:id="lbAutorisation" layoutX="256.0" layoutY="291.0" prefHeight="25.0" prefWidth="248.0" />
+   </children>
+</AnchorPane>

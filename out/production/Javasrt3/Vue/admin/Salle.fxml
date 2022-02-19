@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="594.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.salleController">
+   <children>
+      <Button layoutX="645.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#MiseJour" prefHeight="32.0" prefWidth="136.0" style="-fx-background-color: GREEN;" text="METTRE A JOUR " textFill="WHITE" />
+      <TextField fx:id="txtNomSalle" layoutX="413.0" layoutY="37.0" prefHeight="32.0" prefWidth="163.0" promptText="Nom Salle" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="txtNomBatiment" layoutX="414.0" layoutY="75.0" prefHeight="32.0" prefWidth="163.0" promptText="Nom Batiment" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="txtCapacite" layoutX="415.0" layoutY="113.0" prefHeight="32.0" prefWidth="163.0" promptText="Capacite Salle" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label fx:id="lbResultatSalle" layoutX="426.0" layoutY="303.0" prefHeight="47.0" prefWidth="306.0" />
+      <TextField fx:id="txtSituation" layoutX="416.0" layoutY="153.0" prefHeight="32.0" prefWidth="163.0" promptText="Etat Salle" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="644.0" layoutY="34.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #7324ba;" text="AJOUTER" textFill="WHITE" />
+      <Button layoutX="645.0" layoutY="92.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: RED;" text="SUPPRIMER" textFill="WHITE" />
+      <TableView fx:id="tableSalle" layoutX="12.0" layoutY="20.0" prefHeight="565.0" prefWidth="394.0">
+        <columns>
+          <TableColumn fx:id="colNom" prefWidth="132.0" text="Nom Salle" />
+            <TableColumn fx:id="colCapacite" prefWidth="125.0" text="Capacite" />
+          <TableColumn fx:id="ColSiituation" prefWidth="136.0" text="Situation" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

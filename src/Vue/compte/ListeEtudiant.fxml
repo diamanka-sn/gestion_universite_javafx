@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="547.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.listeEtudiantController">
+   <children>
+      <TableView fx:id="tableEtudiant" layoutX="31.0" layoutY="66.0" prefHeight="415.0" prefWidth="673.0">
+        <columns>
+          <TableColumn fx:id="col_etudiant_nom" prefWidth="126.0" text="Nom" />
+          <TableColumn fx:id="col_etudiantPrenom" prefWidth="153.0" text="Prenom" />
+            <TableColumn fx:id="col_etudiantEmail" prefWidth="205.0" text="Email" />
+            <TableColumn fx:id="col_etudiantNumero" prefWidth="217.0" text="Numero Telephone" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

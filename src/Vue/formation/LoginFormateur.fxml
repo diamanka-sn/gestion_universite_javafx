@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.formation.LoginFormateurController">
+   <children>
+      <TextField fx:id="txtMatricule" layoutX="214.0" layoutY="135.0" prefHeight="37.0" prefWidth="167.0" promptText="Matricule" style="-fx-background-color: Transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px  0px;" />
+      <Button layoutX="253.0" layoutY="276.0" mnemonicParsing="false" onAction="#Connexion" prefHeight="37.0" prefWidth="131.0" style="-fx-background-color: #7324ba;" text="CONNEXION" textFill="WHITE" />
+      <Label fx:id="lbFormateur" layoutX="155.0" layoutY="347.0" prefHeight="31.0" prefWidth="310.0" />
+      <PasswordField fx:id="txtPasse" layoutX="214.0" layoutY="196.0" prefHeight="37.0" prefWidth="167.0" promptText="Mot de Passe" style="-fx-background-color: transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+</AnchorPane>

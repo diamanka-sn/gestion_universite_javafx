@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.controller">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #7324ba;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/university_100px.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="68.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#Admin" prefHeight="47.0" prefWidth="65.0" style="-fx-background-color: #7424ba;" />
+            <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="20.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/superman_100px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="root" prefHeight="500.0" prefWidth="549.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="18.0" layoutY="202.0" mnemonicParsing="false" onAction="#Etudiant" prefHeight="40.0" prefWidth="83.0" style="-fx-background-color: #7324ba;" text="Etudiant" textFill="WHITE" />
+            <Button layoutX="203.0" layoutY="202.0" mnemonicParsing="false" onAction="#Enseignant" onMouseClicked="#LoginButton" prefHeight="40.0" prefWidth="83.0" style="-fx-background-color: #7324ba;" text="Enseignant" textFill="WHITE" />
+            <Button layoutX="18.0" layoutY="303.0" mnemonicParsing="false" onAction="#Formation" onMouseClicked="#LoginButton" prefHeight="40.0" prefWidth="157.0" style="-fx-background-color: #7324ba;" text="Responsable Formation" textFill="WHITE" />
+            <Button layoutX="196.0" layoutY="303.0" mnemonicParsing="false" onAction="#Salle" onMouseClicked="#LoginButton" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #7324ba;" text="Responsable Salle" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

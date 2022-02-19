@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.formation.AccueilFormateurController">
+   <left>
+      <AnchorPane prefHeight="573.0" prefWidth="234.0" style="-fx-background-color: #7324ba;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="79.0" layoutY="247.0" mnemonicParsing="false" onAction="#liberer" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #7324ba;" text="LIBERER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="83.0" layoutY="354.0" mnemonicParsing="false" onAction="#Attribuer" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #7324ba;" text="ATTRIBUER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="134.0" layoutY="424.0" mnemonicParsing="false" onAction="#Deconnecter" prefHeight="54.0" prefWidth="76.0" style="-fx-background-color: #7324ba;" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Image/disconnected_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="root" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.AdminController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="248.0" style="-fx-background-color: #7324ba;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/superman_100px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnAccueil" layoutX="69.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#accueil" prefHeight="41.0" prefWidth="138.0" style="-fx-background-color: #7324ba;" text="ACCUEIL" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="75.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/home_100px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnSalles" layoutX="71.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#salles" prefHeight="41.0" prefWidth="138.0" style="-fx-background-color: #7324ba;" text="SALLES" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="77.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/room_100px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnComptes" layoutX="72.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#comptes" prefHeight="41.0" prefWidth="138.0" style="-fx-background-color: #7324ba;" text="COMPTES" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="78.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/account_100px.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="29.0" layoutY="522.0" mnemonicParsing="false" onAction="#Deconnecter" prefHeight="53.0" prefWidth="61.0" style="-fx-background-color: #7324ba;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Image/disconnected_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1037.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

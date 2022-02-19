@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.salle.AjouterSalleController">
+   <children>
+      <TextField fx:id="txtNom" layoutX="151.0" layoutY="27.0" prefHeight="37.0" prefWidth="167.0" promptText="Nom Salle" style="-fx-background-color: Transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px  0px;" />
+      <TextField fx:id="txtBatiment" layoutX="151.0" layoutY="81.0" prefHeight="37.0" prefWidth="167.0" promptText="Nom Batiment" style="-fx-background-color: Transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px  0px;" />
+      <TextField fx:id="txtCapacite" layoutX="151.0" layoutY="138.0" prefHeight="37.0" prefWidth="167.0" promptText="Capacite" style="-fx-background-color: Transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px  0px;" />
+      <TextField fx:id="txtEtat" layoutX="151.0" layoutY="196.0" prefHeight="37.0" prefWidth="167.0" promptText="Etat Salle" style="-fx-background-color: Transparant; -fx-border-color: #7324ba; -fx-border-width: 0px 0px 2px  0px;" />
+      <Button layoutX="439.0" layoutY="252.0" mnemonicParsing="false" onAction="#AjouterSalle" prefHeight="37.0" prefWidth="131.0" style="-fx-background-color: #7324ba;" text="AJOUTER SALLE" textFill="WHITE" />
+      <Label fx:id="lbAjouter" layoutX="122.0" layoutY="318.0" prefHeight="24.0" prefWidth="328.0" />
+   </children>
+</AnchorPane>

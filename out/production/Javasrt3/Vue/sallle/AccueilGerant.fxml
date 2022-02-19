@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.salle.controllerAccueil">
+   <left>
+      <AnchorPane prefHeight="509.0" prefWidth="227.0" style="-fx-background-color: #7324ba;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="78.0" layoutY="196.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #7324ba;" text="AJOUTER" textFill="WHITE" />
+            <Button layoutX="78.0" layoutY="272.0" mnemonicParsing="false" onAction="#Attribuer" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #7324ba;" text="ATTRIBUER" textFill="WHITE" />
+            <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="45.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/calendar_plus_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="42.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/add_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/room_100px.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="12.0" layoutY="448.0" mnemonicParsing="false" onAction="#Deconnecter" prefHeight="53.0" prefWidth="61.0" style="-fx-background-color: #7324ba;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Image/disconnected_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="79.0" layoutY="340.0" mnemonicParsing="false" onAction="#Tableau" prefHeight="35.0" prefWidth="136.0" style="-fx-background-color: #7324ba;" text="TABLEAU DE BORD" textFill="WHITE" />
+            <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="46.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/combo_chart_100px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="root" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
